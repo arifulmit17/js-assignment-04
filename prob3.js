@@ -3,13 +3,14 @@ function  willSuccess( marks ) {
     isPass=0;
     isFail=0;
     if(Array.isArray(marks)===true){
-        for(const mark of marks){
-            if(mark>=50){
-                isPass+=1;
-            }
-            else{
-                isFail+=1;
-            }
+        for(const mark of marks){   
+                if(mark>=50){
+                    isPass+=1;
+                }
+                else{
+                    isFail+=1;
+                }
+             
         }
     }
     else{

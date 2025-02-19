@@ -1,17 +1,22 @@
 /*function signature/sample */
 function  validContact( contact ) {
     if(typeof contact ==='string'){
-        if(contact.length===11 && !contact.includes(' ') && contact[0]==='0' && contact[1]==='1'){
-            return true;
+        
+        
+            if(contact.length===11 && !contact.includes(' ') && contact.startsWith('01')){
+                return true;
+            }
+            
+            else{
+                return false;
+            }
+        
+        
+        }
+        else{
+            return '"Invalid"';
         }
         
-        else{
-            return false;
-        }
-    }
-    else{
-        return '"Invalid"';
-    }
     
 }
 
